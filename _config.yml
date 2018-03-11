@@ -1,4 +1,4 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -7,7 +7,7 @@ title: 步履蹒跚
 subtitle: 独行者
 description: 没有你的世界
 author: 姚乔锋
-language:
+language:zh-CN
 timezone:
 
 # URL
