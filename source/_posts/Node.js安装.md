@@ -1,4 +1,4 @@
-﻿---
+---
 title: Node.js安装
 categories: Node.js
 ---
@@ -70,4 +70,5 @@ node.js自带的包管理器（npm）不论是在速度上还是在功能上都�
 **npm install -g cnpm --registry=https://registry.npm.taobao.org**
 
 然后是yarn，和npm兼容的包管理器，提供多线程下载和更多的功能。
-下载地址：**[https://yarnpkg.com/latest.msi](https://yarnpkg.com/latest.msi)**
+下载：**sudo wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo**
+安装：**sudo yum install yarn**
