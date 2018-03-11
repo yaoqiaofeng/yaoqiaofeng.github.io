@@ -1,56 +1,13 @@
-(function() {
+﻿(function() {
     'use strict';
     var gulp = require('gulp'),
-        less = require('gulp-less'),
-        rename = require('gulp-rename'),
-        minifycss = require('gulp-minify-css'),
-        autoprefixer = require('gulp-autoprefixer'),
-        uglify = require('gulp-uglify'),
-        jshint = require('gulp-jshint'),
-        stylish = require('jshint-stylish'),
-        notify = require('gulp-notify'),
-        plumber = require('gulp-plumber'),
+        rev = require('gulp-rev-append'),
         htmlclean = require('gulp-htmlclean'),
         htmlmin = require('gulp-htmlmin'),
-        rev = require('gulp-rev-append'),
-        sequence = require('gulp-sequence'),
-        path = require('path'),
-        paths = {
-            root: './',
-            source: './themes/snippet/source/' //主题下原文件
-        }
-
-    /*====================================================
-         开发主题
-    ====================================================*/
-
-    // CSS预处理
-    gulp.task('less-task', function() {
-        return gulp.src(paths.source + 'css/less/_style.less')
-        .pipe(plumber({
-            errorHandler: notify.onError('Error: <%= error.message %>')
-        }))
-        .pipe(less())
-        .pipe(rename({basename: "style"}))
-        .pipe(gulp.dest(paths.source + 'css'))
-        .pipe(notify({message: 'less compile complete'}));
-    });
-
-    // 校验JS语法和风格
-    gulp.task('js-task', function() {
-        return gulp.src(paths.source + 'js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter(stylish))
-        .pipe(gulp.dest(paths.source + 'js/'))
-        .pipe(notify({message: 'js compile complete'}));
-    });
-
-    // 监听任务-主题开发模式
-    gulp.task('dev', function() {
-        gulp.watch(paths.source + 'css/less/*.less', ['less-task']);
-        gulp.watch(paths.source + 'js/*.js', ['js-task']);
-    });
-
+        uglify = require('gulp-uglify'),
+        notify = require('gulp-notify'),
+        minifycss = require('gulp-minify-css'),
+        autoprefixer = require('gulp-autoprefixer')
 
     /*====================================================
         部署前代码处理
