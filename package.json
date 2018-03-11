@@ -6,6 +6,8 @@
     "version": "3.6.0"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.0",
     "hexo": "^3.2.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
