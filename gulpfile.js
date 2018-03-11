@@ -7,6 +7,7 @@
         uglify = require('gulp-uglify'),
         notify = require('gulp-notify'),
         minifycss = require('gulp-minify-css'),
+        sequence = require('gulp-sequence'),
         autoprefixer = require('gulp-autoprefixer')
 
     /*====================================================
