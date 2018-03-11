@@ -40,7 +40,7 @@ after_script:
 
 branches:
   only:
-    - dev
+    - blog-source
 env:
  global:
    - GH_REF: github.com/yaoqiaofeng/yaoqiaofeng.github.io.git
