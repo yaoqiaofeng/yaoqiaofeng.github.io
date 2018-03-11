@@ -1,8 +1,8 @@
----
+﻿---
 title: Node.js安装
 categories: Node.js
 ---
-### 一、windows
+## 一、windows
 ---
 #### 1.下载
 Node.js：**[https://nodejs.org/en/](https://nodejs.org/en/)**
@@ -26,8 +26,8 @@ node.js自带的包管理器（npm）不论是在速度上还是在功能上都�
 
 然后是yarn，和npm兼容的包管理器，提供多线程下载和更多的功能。
 下载地址：**[https://yarnpkg.com/latest.msi](https://yarnpkg.com/latest.msi)**
- &nbsp &nbsp
-### 二、linux
+
+## 二、linux
 ---
 linux是基于Centos7.5的版本进行说明的
 #### 1. 下载
