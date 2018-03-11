@@ -8,8 +8,8 @@ menu:
 - page: home
   url: /
   icon: 
-- page: Nodejs
-  url: /categories/Nodejs/
+- page: Node.js
+  url: /categories/Node.js/
   icon: 
 - page: Delphi
   url: /categories/Delphi/
